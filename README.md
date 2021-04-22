@@ -10,6 +10,7 @@
 #### Используемые технологии:
 ```
 - React( Redux, react-router-dom )
+- react-bootstrap
 - create-react-app
 ```
 
