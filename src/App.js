@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React  from 'react';
+import { HashRouter, Route  } from 'react-router-dom';
+
+import CurrencyList  from './views/CurrencyList';
+import NavBar        from './components/navBar';
+import Converter     from './views/converter'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './sass/index.scss';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <div className="App">
+        <NavBar/>
+        <Route exact path = {["/home", "/"]}   component = { CurrencyList } />
+        <Route exact path = "/converter"   component = { Converter } />
+      </div>
+    </HashRouter>
   );
 }
 
