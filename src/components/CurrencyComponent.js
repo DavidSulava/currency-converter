@@ -18,7 +18,7 @@ export default function CurrencyComponent({currency}) {
     return (
         <Container  className='currency_element'>
 
-            <Row xs={true} sm={true}>{currency.Name}</Row>
+            <Row xs={true} sm={true}  className='currency_el_label' > {currency.Name} </Row>
 
             <Row xs='auto' sm='auto' className='currency_data_wrapper'>
 

@@ -84,7 +84,6 @@
     max-width        : 380px ;
     min-height       : 80px;
     background-color : rgb(235, 235, 235);
-    box-sizing       : border-box;
 
     @include boxDecoration();
     @include animateFrame('opacity', '1s');
@@ -111,7 +110,6 @@
 .spinner-border{
     position  : absolute;
     top       : 50%;
-
 }
 
 //--Converter Component
@@ -215,4 +213,5 @@
     .currency_element, .searchForm{
         width: 90vw;
     }
+
 }
