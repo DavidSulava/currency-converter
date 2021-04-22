@@ -40,7 +40,7 @@ export default function CurrencyComponent({currency}) {
                 <Col xs={4} sm={4} className="ml-sm-4">
                     <Row className="delta_wrapper" style={{ 'color': delta>0? 'green': 'red' }}>
                         { delta>0? arrowUp: arrowDown}
-                        <Col className='ml-sm-2'>{ delta }</Col>
+                        <Col className='ml-2'>{ delta }</Col>
                     </Row>
                 </Col>
 

@@ -3,9 +3,9 @@ import { useDispatch, useSelector, shallowEqual  } from 'react-redux';
 
 import Spinner  from 'react-bootstrap/Spinner';
 
-import {getListAction} from '../store/actions/getListCurrency';
+import {getListAction}   from '../store/actions/getListCurrency';
 import CurrencyComponent from '../components/CurrencyComponent';
-import SearchForm from '../components/SearchForm'
+import SearchForm        from '../components/SearchForm'
 
 function CurrencyList() {
 
